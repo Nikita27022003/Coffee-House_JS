@@ -1,0 +1,906 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merienda', sans-serif;
+    margin: 0;
+    padding: 0;
+  
+    /* Header section */
+  }
+  
+  html body {
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  
+  .clearfix {
+    zoom: 1;
+  
+    &:after {
+      content: '.';
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+  
+  header {
+    position: relative;
+    background: url(../img/main_page/main_picture.png) center (center / cover) no-repeat;
+    height: 640px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    padding: 13px 70px;
+    margin-right: 40px;
+    list-style-type: none;
+  
+    .menu_link {
+      color: #ffff;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+    }
+  
+    .menu_item {
+      padding-right: 28px;
+      margin-top: 40px;
+    }
+  }
+  
+  .menu_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    list-style-type: none;
+  
+    .menu_link {
+      color: #000;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+      padding-right: 28px;
+    }
+  
+    .menu_item {
+      margin-top: 40px;
+    }
+  }
+  
+  .beans_light {
+    position: absolute;
+    margin-top: 40px;
+    padding-left: 35px;
+  }
+  
+  .about_coffee {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 111px;
+  }
+  
+  .beans {
+    display: block;
+    overflow: hidden;
+    margin: 21px auto;
+  }
+  
+  .block {
+    overflow: hidden;
+    text-align: center;
+    font-size: 5px;
+  
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    &:before, &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 2px;
+      background-color: white;
+      position: relative;
+    }
+  
+    &:before {
+      margin-left: -100%;
+      left: -14px;
+    }
+  
+    &:after {
+      margin-right: -100%;
+      right: -14px;
+    }
+  }
+  
+  .subheader_text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35.27px;
+  }
+  
+  .subheader_question {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    display: block;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 27px;
+  }
+  
+  /* -------------------------------- */
+  /* About us setion */
+  
+  .about_us {
+    height: 520px;
+  }
+  
+  .about_us_topic {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-top: 80px;
+  }
+  
+  .beans_dark {
+    display: block;
+    width: 29.3px;
+    height: 29.3px;
+    margin: 20px auto;
+  }
+  
+  .block_dark {
+    overflow: hidden;
+    text-align: center;
+    font-size: 5px;
+  
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    &:before, &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 2px;
+      background-color: black;
+      position: relative;
+    }
+  
+    &:before {
+      margin-left: -100%;
+      left: -14px;
+    }
+  
+    &::after {
+      margin-right: -100%;
+      right: -14px;
+    }
+  }
+  
+  .footer_beans {
+    overflow: hidden;
+    text-align: center;
+    font-size: 5px;
+  
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    &:before, &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 60px;
+      height: 2px;
+      background-color: black;
+      position: relative;
+    }
+  
+    &:before {
+      margin-left: -100%;
+      left: -14px;
+    }
+  
+    &::after {
+      margin-right: -100%;
+      right: -14px;
+    }
+  }
+  
+  .about_us_text {
+    width: 589px;
+    height: 223px;
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin: 40.7px auto;
+    text-align: center;
+  }
+  
+  /* ------------- */
+  /* Our best */
+  
+  .our_best {
+    height: 495px;
+    background: url(../img/main_page/Mask_Group.png) center (center / cover) no-repeat;
+  }
+  
+  .our_best_topic {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    padding-top: 80px;
+  }
+  
+  .all_cart {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart {
+    margin-top: 30px;
+    margin-right: 40px;
+    width: 230px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+  }
+  
+  .coffee {
+    display: block;
+    margin: 22px auto;
+    width: 151px;
+    height: 130px;
+  }
+  
+  .cart_text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .cart_price {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+  }
+  
+  footer {
+    .menu {
+      .menu_link {
+        display: block;
+        padding-top: 52px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+        margin: 0 auto;
+        text-decoration: none;
+      }
+  
+      display: flex;
+      justify-content: center;
+      padding: 13px 70px;
+      margin-right: 40px;
+      list-style-type: none;
+    }
+  
+    .beans_dark {
+      width: 29.3px;
+      height: 29.3px;
+    }
+  }
+  
+  /* Our Coffee Page */
+  /* Footer */
+  
+  .our_coffee {
+    position: relative;
+    background: url(../img/our_coffee_page/main_picture.png) center (center / cover) no-repeat;
+    height: 300px;
+  }
+  
+  .beans_light {
+    position: absolute;
+    padding-left: 35px;
+  }
+  
+  .our_coffee_topic {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .about_our_beans {
+    height: 650px;
+  }
+  
+  .person {
+    width: 272px;
+    height: 355px;
+    display: block;
+    margin: 70px auto;
+  }
+  
+  .our_beans {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .our_beans_text {
+    display: block;
+    width: 346px;
+    height: 232px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+  }
+  
+  .beans_our_coffee_footer {
+    position: absolute;
+    padding-left: 390px;
+    margin-top: 80px;
+  }
+  
+  .seaching {
+    height: 300px;
+  }
+  
+  .search_form {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+  }
+  
+  [type=search] {
+    outline-offset: -2px;
+    text-align: center;
+  }
+  
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .button_coffee {
+    width: 75px;
+    height: 30px;
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    margin: -8px auto auto 10px;
+    border: none;
+    cursor: pointer;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .more {
+    outline: none;
+    width: 120px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    border: 1px solid #FFFFFF;
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .cart_of_coffee {
+    width: 220px;
+    height: 260px;
+    box-shadow: 30px 15px 5px #FFF0F5;
+    border-radius: 8px;
+    margin-right: 71px;
+    margin-top: 60px;
+  
+    .hide {
+      display: none;
+    }
+  }
+  
+  .coffee_name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin-top: 14px;
+  }
+  
+  .country {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 14px;
+    margin-right: 25px;
+    text-align: end;
+  }
+  
+  .price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 14px;
+    margin-left: 155px;
+  }
+  
+  .coffee_picture {
+    max-width: 167px;
+    height: 115px;
+    display: block;
+    margin: 37px auto 0px;
+  }
+  
+  .cart_of_coffee_all {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart_of_coffee_pleasure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &:first-child {
+      margin-top: 60px;
+    }
+  }
+  
+  /* /* .coffee_footer{
+      position: relative;
+      height: 180px; */
+  
+  .beans_lightt {
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 40px;
+  }
+  
+  /* ----------- */
+  /* About IT */
+  
+  .coffee_section {
+    display: block;
+    margin: 70px auto;
+  }
+  
+  .description {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    width: 418px;
+    height: 81px;
+  }
+  
+  .coffee_price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+  
+  .price_of_coffee {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+  
+  .coffee_price span {
+    font-size: 200%;
+    font-weight: 100;
+    color: #000000;
+  }
+  
+  .about_it_footer {
+    margin-top: 82px;
+  }
+  
+  .pleasure_header {
+    position: relative;
+    background: url(../img/for_your_pleasure/for_your_pleasure_main.png) center (center / cover) no-repeat;
+    height: 300px;
+  }
+  
+  .pleasure_topic {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .about_our_pleasure {
+    height: 650px;
+  }
+  
+  .coffee_pleasure {
+    width: 272px;
+    height: 355px;
+    display: block;
+    margin: 70px auto;
+  }
+  
+  .pleasure_text {
+    display: block;
+    width: 346px;
+    height: 232px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+  }
+  
+  .pleasure_footer {
+    .beans_lightt {
+      position: absolute;
+      margin-left: 380px;
+      margin-top: 40px;
+    }
+  
+    position: relative;
+    height: 180px;
+  }
+  
+  /*  */
+  /*  */
+  
+  .contact_us {
+    position: relative;
+    background: url(../img/contact_us/contact_us.png) center (center / cover) no-repeat;
+    height: 300px;
+  }
+  
+  .tell_section {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .contact-form {
+    width: 30%;
+    margin: 0 auto;
+  }
+  
+  input {
+    &[type=text], &[type=email], &[type=phone] {
+      width: 100%;
+      padding: 7px;
+      border-radius: 3px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.49);
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+      margin-top: 27px;
+    }
+  }
+  
+  select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.49);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-top: 27px;
+  }
+  
+  textarea {
+    width: 350px;
+    height: 120px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.49);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    height: 100px;
+    display: block;
+    margin: 30px auto;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  label {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+  }
+  
+  .message {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .send_us {
+    display: block;
+    width: 120px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.49);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+  }
+  
+  /*  */
+  
+  .feedback_message {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    margin-top: 128px;
+  }
+  
+  .thank_you_image {
+    display: block;
+    margin: 0 auto;
+    margin-top: 39px;
+  }
+  
+  .another_message {
+    width: 120px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.49);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+  }
+  
+  .looking_for {
+    text-align: right;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .overlay {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    color: #eee;
+    margin-bottom: 30px;
+  }
+  
+  #coffeeList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 'name image' 'house image';
+    text-align: left;
+  
+    > {
+      h2 {
+        grid-area: name;
+        margin-bottom: 0px;
+      }
+  
+      p {
+        grid-area: house;
+        margin: 0;
+        margin-top: -18px;
+      }
+  
+      img {
+        max-height: 100px;
+        grid-area: image;
+      }
+    }
+  }
+  
+  #searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  
+  #searchWrapper {
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: 15px;
+    }
+  }
+  
+  .devider_line {
+    display: block;
+    margin: 0 auto;
+    color: black;
+    height: 0px;
+    width: 240px;
+    border: 1px solid #000000;
+    margin-top: 73px;
+  }
+  
+  .Searching {
+    margin-top: 65px;
+  }
+  
+  footer .container {
+    position: relative;
+  }
+  
+  .beans_light_footer {
+    position: absolute;
+    padding-left: 290px;
+    margin-top: 15px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .beans_light_footer {
+      position: absolute;
+      padding-left: 110px;
+      margin-top: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .beans_light_footer {
+      position: absolute;
+      margin-left: 20px;
+      margin-top: 30px;
+      left: 10px;
+    }
+  
+    @media screen and (max-width: 574px) {
+      .beans_light_footer {
+        position: absolute;
+        padding-left: 0px;
+        left: 30px;
+      }
+    }
+  }
